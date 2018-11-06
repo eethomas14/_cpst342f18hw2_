@@ -1,0 +1,33 @@
+h1{
+    color: #6f42c1;
+    font-family: "Bookman Old Style", serif;
+    font-size: 50px;
+    font-weight: bold;
+}
+h2{
+    color: #491217;
+    font-family: "Corbel", sans-serif;
+    font-size: 25px;
+    font-weight: normal;
+}
+p{
+line-height: 2;
+    color: #533f03;
+    font-family: "Book Antiqua", serif;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+header {
+     background: #aaa;
+     padding: 20px 0;
+     margin-top: 50px;
+     margin-bottom: 100px;
+     color: #fff;
+ }
+
+footer {
+    margin-top: 100px;
+    background: #aaa;
+    padding: 20px 0;
+    color: #fff;
+}
