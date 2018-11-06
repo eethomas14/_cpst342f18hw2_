@@ -1,6 +1,6 @@
-h1{
+h1 {
     color: #6f42c1;
-    font-family: "Bookman Old Style", serif;
+    font-family: 'Special Elite', cursive;
     font-size: 50px;
     font-weight: bold;
 }
@@ -13,8 +13,9 @@ h2{
 p{
 line-height: 2;
     color: #533f03;
-    font-family: "Book Antiqua", serif;
-    font-size: 15px;
+    font-family: 'EB Garamond', serif;
+;
+    font-size: 17px;
     margin-bottom: 30px;
 }
 header {
