@@ -1,23 +1,115 @@
-﻿<!DOCTYPE html>
+﻿
+<!doctype html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>The Authors</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Starter Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="Assignment1-2-rules.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Special+Elite" rel="stylesheet">
 </head>
+
 <body>
-	<h1>This is the heading.</h1>
-	<h2>This is the Subheading.</h2>
-    <p>
-        vel pulvinar urna commodo eu. Aenean posuere facilisis lorem, quis aliquam lectus aliquam quis. Duis semper <br>
-        sem id hendrerit convallis. Nulla sed massa nisl. Integer sollicitudin mattis purus, accumsan posuere augue <br>
-        ultricies vel. Aliquam nec odio ut tortor gravida hendrerit. Pellentesque sollicitudin lacinia mauris, vel <br>
-        interdum eros aliquam nec. Mauris ullamcorper urna ante, dictum semper nibh lacinia vel. Vivamus pulvinar in <br>
-        nisl nec vulputate. Quisque aliquet odio non orci dignissim lacinia. Praesent sed aliquet augue. Phasellus <br>
-        ornare venenatis ipsum, nec maximus nisl efficitur nec. Nullam dictum, libero at commodo condimentum, nunc <br>
-        ipsum fermentum lectus, et vestibulum risus ipsum sit amet erat. Suspendisse tempor cursus ex nec commodo. <br>
-        Integer ligula velit, sollicitudin at orci sit amet, interdum condimentum lacus.
-    </p>
-<img src ="foret%20de%20la%20sainte%20baum.jpg" alt = 'Sainte Baum Forest'>
-<a href="index.html">Back to Welcome Page.</a>
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown01">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+<header>
+    <div class="container">
+       The Author's Page
+    </div>
+</header>
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-the-authors.html">About</a></li>
+    </ul>
+</nav>
+
+<main role="main" class="container">
+
+    <div class="starter-template">
+        <div class="row">
+            <div class="col col-4">
+                <h1>This is the first heading</h1>
+            </div>
+
+            <div class="row">
+                <div class="col col-8">
+                    <h2>This is the second heading</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col col-5">
+                    <p>
+                        vel pulvinar urna commodo eu. Aenean posuere facilisis lorem, quis aliquam lectus aliquam quis. Duis semper <br>
+                        sem id hendrerit convallis. Nulla sed massa nisl. Integer sollicitudin mattis purus, accumsan posuere augue <br>
+                        ultricies vel. Aliquam nec odio ut tortor gravida hendrerit. Pellentesque sollicitudin lacinia mauris, vel <br>
+                        interdum eros aliquam nec. Mauris ullamcorper urna ante, dictum semper nibh lacinia vel. Vivamus pulvinar in <br>
+                        nisl nec vulputate. Quisque aliquet odio non orci dignissim lacinia. Praesent sed aliquet augue. Phasellus <br>
+                        ornare venenatis ipsum, nec maximus nisl efficitur nec. Nullam dictum, libero at commodo condimentum, nunc <br>
+                        ipsum fermentum lectus, et vestibulum risus ipsum sit amet erat. Suspendisse tempor cursus ex nec commodo. <br>
+                        Integer ligula velit, sollicitudin at orci sit amet, interdum condimentum
+                    </p>
+                </div>
+            </div>
+            <img src ="foret%20de%20la%20sainte%20baum.jpg" alt = 'Sainte Baum Forest'>
+        </div>
+        <footer>
+            <div class="container">
+                <a href="index.html">Back to Welcome Page.</a>
+            </div><!-- .container -->
+        </footer>
+    </div>
+
+
+</main><!-- /.container -->
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+<script src="../../assets/js/vendor/popper.min.js"></script>
+<script src="../../dist/js/bootstrap.min.js"></script>
 </body>
 </html>
