@@ -24,7 +24,7 @@
         };
     </script>
 
-    <!-- This is all I need to add to use CSS transitions for my extra credit. I added a button to change the color to red and now I only needed to add the color property and 3 second duration. (javascript.info was used for reference) -->
+    <!-- EXTRA CREDIT: This is all I need to add to use CSS transitions for my extra credit. I added a button to change the color to red and now I only needed to add the color property and 3 second duration. (javascript.info was used for reference) -->
     <style>
         #pToChange {
             transition-property: color;
@@ -62,15 +62,41 @@
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
+            <!--DATA ATTRIBUTE: using data attribute here on the search button-->
             <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            <button data-action="search" id="menu" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
+        <!--JS for the above search button-->
+        <script>
+
+            class Menu {
+                constructor(elem) {
+                    this.elem = elem;
+                    elem.onclick = this.onClick.bind(this); // (*)
+                }
+
+                search() {
+                    alert('searching');
+                }
+
+                onClick(event) {
+                    let action = event.target.dataset.action;
+                    if (action) {
+                        this[action]();
+                    }
+                };
+            }
+
+            new Menu(menu);
+
+        </script>
     </div>
 </nav>
 <header>
     <div class="container">
         Welcome to my site!
     </div>
+
 </header>
 <nav>
     <ul>
@@ -93,20 +119,22 @@
             </div>
         </div>
             <div class="row">
-                <div class="col col-5">
 
-                    <input type="color" id="selectedColor">
-                    <button class="btn btn-secondary" onclick="colorchange()">Change Background Color!</button>
+                    <div class="col col-8">
 
-                    <script>
-                        document.getElementById("selectedColor").addEventListener("change", colorchange);
-                        function colorchange(){
-                            var x = document.getElementById("selectedColor").value;
-                            document.body.style.backgroundColor=x;
-                        }
-                    </script>
+                        <input type="color" id="selectedColor">
+                        <button class="btn btn-secondary" onclick="colorchange()">Change Background Color!</button>
 
-                </div>
+                        <script>
+                            document.getElementById("selectedColor").addEventListener("change", colorchange);
+                            function colorchange(){
+                                var x = document.getElementById("selectedColor").value;
+                                document.body.style.backgroundColor=x;
+                            }
+                        </script>
+
+                    </div>
+
             </div>
 
         <div class="row">
@@ -204,7 +232,6 @@
             <!--Form data from Local Storage to organized table-->
 
 
-               <!-- document.getElementById("emailValue").innerHTML = document.getItem('email');-->
             </script>
 
             <table class="table table-striped table-dark">
@@ -223,7 +250,7 @@
                 <tbody>
                 <tr>
                     <th scope="row">1</th>
-                    <td id="emailValue">data</td>
+                    <td id="id01">data</td>
                     <td>data</td>
                     <td>data</td>
                     <td>data</td>
@@ -247,6 +274,7 @@
                 </tr>
 
             </table>
+
 
         </div>
         </div>
