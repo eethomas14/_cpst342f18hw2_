@@ -285,7 +285,7 @@
 
             </script>
             <script>
-                //below are the required parameters for the api call
+                //below are the required parameters for the api call listed in the google developer guide
                 var latLong = '48.856613, 2.352222' // Lat and Long of Paris //
                 var targetDate = new Date() // Current date/time of user computer
                 var timestamp = targetDate.getTime()/1000 + targetDate.getTimezoneOffset() * 60 // Current UTC date/time expressed as seconds since midnight, January 1, 1970 UTC
@@ -312,7 +312,6 @@
                                 alert("The date and time in Paris is " + localdate.toLocaleString());
                                 //replacing the time with the previous h1 text, to comply the homework requirement to have it appear in a stylized manner.
                                 document.getElementById("h1").innerHTML = localdate.toLocaleString();
-
                             })
                         }
                     )
@@ -320,7 +319,6 @@
                         console.log('Fetch Error :-S', err);
                     });
                  </script>
-
         </div>
         </div>
         <footer>
