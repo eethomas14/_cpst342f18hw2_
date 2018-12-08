@@ -298,7 +298,7 @@
                 fetch(apicall)
                     .then(
                         function(response) {
-                            if (response.status !== 200) {
+                            if (response.status !== 200) { // boolean check for 200 status code, which indicates that action requested by client was received
                                 console.log('Looks like there was a problem. Status Code: ' +
                                     response.status);
                                 return;
@@ -309,9 +309,8 @@
                                 var offsets = data.dstOffset * 1000 + data.rawOffset * 1000 // get DST and time zone offsets in milliseconds
                                 var localdate = new Date(timestamp * 1000 + offsets) // Date object containing current time of paris (timestamp + dstOffset + rawOffset)
                                 console.log(localdate.toLocaleString()) // using built-in javascript function 'toLocalString' to convert a date and time to a string
-                                alert("The date and time in Paris is " + localdate.toLocaleString());
-                                //replacing the time with the previous h1 text, to comply the homework requirement to have it appear in a stylized manner.
-                                document.getElementById("h1").innerHTML = localdate.toLocaleString();
+                                alert("The date and time in Paris is " + localdate.toLocaleString()); //made alter to quickly check my work
+                                document.getElementById("h1").innerHTML = localdate.toLocaleString(); //replacing the time with the previous h1 text, to comply the homework requirement to have it appear in a stylized manner.
                             })
                         }
                     )
