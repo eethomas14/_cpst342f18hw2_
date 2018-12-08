@@ -63,7 +63,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="3" />
-          <entry key="HTML" value="11578" />
+          <entry key="HTML" value="11753" />
           <entry key="JavaScript" value="348" />
           <entry key="PLAIN_TEXT" value="455" />
         </counts>
@@ -90,7 +90,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="3" />
-          <entry key="html" value="11578" />
+          <entry key="html" value="11753" />
           <entry key="js" value="348" />
           <entry key="md" value="455" />
         </counts>
@@ -105,8 +105,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="446">
-              <caret line="313" column="30" lean-forward="true" selection-start-line="313" selection-start-column="30" selection-end-line="313" selection-end-column="30" />
+            <state relative-caret-position="501">
+              <caret line="316" column="70" selection-start-line="316" selection-start-column="70" selection-end-line="316" selection-end-column="70" />
             </state>
           </provider>
         </entry>
@@ -220,12 +220,12 @@
       <workItem from="1542693598644" duration="6000" />
       <workItem from="1543477777662" duration="72709000" />
       <workItem from="1544162999429" duration="13356000" />
-      <workItem from="1544219310447" duration="7027000" />
+      <workItem from="1544219310447" duration="7572000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110174000" />
+    <option name="totallyTimeSpent" value="110719000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1357" height="743" extended-state="0" />
@@ -325,8 +325,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="313" column="30" lean-forward="true" selection-start-line="313" selection-start-column="30" selection-end-line="313" selection-end-column="30" />
+        <state relative-caret-position="501">
+          <caret line="316" column="70" selection-start-line="316" selection-start-column="70" selection-end-line="316" selection-end-column="70" />
         </state>
       </provider>
     </entry>

@@ -295,7 +295,7 @@
 
               // used the following website for reference for below:  https://developers.google.com/web/updates/2015/03/introduction-to-fetch
 
-                fetch(apicall)
+                fetch(apicall) //using fetch method with my api call variable as input
                     .then(
                         function(response) {
                             if (response.status !== 200) { // boolean check for 200 status code, which indicates that action requested by client was received
@@ -314,7 +314,7 @@
                             })
                         }
                     )
-                    .catch(function(err) {
+                    .catch(function(err) {                     //this function will only run if the promise is rejected
                         console.log('Fetch Error :-S', err);
                     });
                  </script>
